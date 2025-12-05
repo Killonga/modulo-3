@@ -66,7 +66,7 @@ console.log(pendientes); // Resultado: ["09:00", "11:00"]
 // Utilidad: Machine Learning, Diseño de tablero de ajedrez
 // Utilidad: Enviar información tabulada dinámica a la consola
 //para apoyar nuestro desarrollo web 
-let dias = ["Lunes","Martes", "Miércoles"]
+let dias = ["Lunes", "Martes", "Miércoles"]
 let horariosClinica = [
     ["Día", "09:00", "10:00", "11:00"],
     [dias[0], 5, 3, 2],
@@ -114,12 +114,12 @@ console.log("Nombre: " + objTicket.nombre + "\n"
 let producto = {
     nombre: "Notebook Lenovo",
     precio: 550000,
-    categoria: ["Tecnología","Notebooks"],
+    categoria: ["Tecnología", "Notebooks"],
     stock: 12,
     sucursales: [
-        {nombre: "Valparaíso", direccion:"Calle 1", stock:2},
-        {nombre: "Santiago", direccion:"Calle 5", stock:5},
-        {nombre: "Concepción", direccion:"Calle 6", stock:5},
+        { nombre: "Valparaíso", direccion: "Calle 1", stock: 2 },
+        { nombre: "Santiago", direccion: "Calle 5", stock: 5 },
+        { nombre: "Concepción", direccion: "Calle 6", stock: 5 },
     ]
 };
 
@@ -131,21 +131,21 @@ let vehiculo = {
     precio: 18500000,
     equipamiento: ["ABS", "Alzavidrios Eléctricos", "Airbags", "Dirección eléctrica"],
     traccion: "4x2",
-    mantencionesFabricante:[
-        {tipo:"Mecanica", descripcion:"Cambio de pastillas", km:15000},
-        {tipo:"Mecanica", descripcion:"X", km:20000},
-        {tipo:"Hidráulica", descripcion:"XXX", km:35000},
-        {tipo:"Mecanica", descripcion:"Cambio de frenos", km:45000},
+    mantencionesFabricante: [
+        { tipo: "Mecanica", descripcion: "Cambio de pastillas", km: 15000 },
+        { tipo: "Mecanica", descripcion: "X", km: 20000 },
+        { tipo: "Hidráulica", descripcion: "XXX", km: 35000 },
+        { tipo: "Mecanica", descripcion: "Cambio de frenos", km: 45000 },
     ]
 };
 
-for(let i =0; i < vehiculo.mantencionesFabricante.length; i++){
-console.log("Mantención "+(i+1)+" Tipo: " 
-    + vehiculo.mantencionesFabricante[i].tipo
-    + "Descripción: " 
-    + vehiculo.mantencionesFabricante[i].descripcion
-    + "Km: "
-    + vehiculo.mantencionesFabricante[i].km);
+for (let i = 0; i < vehiculo.mantencionesFabricante.length; i++) {
+    console.log("Mantención " + (i + 1) + " Tipo: "
+        + vehiculo.mantencionesFabricante[i].tipo
+        + "Descripción: "
+        + vehiculo.mantencionesFabricante[i].descripcion
+        + "Km: "
+        + vehiculo.mantencionesFabricante[i].km);
 }
 
 
@@ -154,7 +154,7 @@ let alumno = {
     nombre: "J",
     edad: 33,
     telefonoContacto: 32562254,
-    institucion:"Mindhub",
+    institucion: "Mindhub",
     direccion: "Bio Bio, Chile",
     carrera: "Fullstack JavaScript",
     vespertino: false,
@@ -177,12 +177,12 @@ console.log("Carrera: " + alumno.carrera);
 console.table(alumno.notasModulos);
 
 //Object.keys(objetoX) devuelve un arreglo de claves  
-console.log("-- El obj Alumno tiene "+Object.keys(alumno).length + " atributos/claves" );
+console.log("-- El obj Alumno tiene " + Object.keys(alumno).length + " atributos/claves");
 
 console.log("-- RECORRIENDO OBJETO CON FOR IN")
 
-for (let clave in alumno) { 
+for (let clave in alumno) {
     //clave hace referencia al nombre del atributo
     //ObjetoX["nombre de la clave"] > Devuelve el valor de esa clave
-    console.log(clave, ":", alumno[clave]); 
+    console.log(clave, ":", alumno[clave]);
 }
